@@ -97,6 +97,8 @@
 
 #original_img_container{
 	width: 720px;
+	top: 42%;
+	position: absolute;
 }
 
 #original_img{
