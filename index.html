@@ -1,14 +1,45 @@
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Michael's website</title>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-	</head>
-	<body>
-		<div class="main_div">
-			<img src="img/ovum.png" id="img1">
-			<img src="img/Code_Poem.png">
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- webfont link-->
+	<link href="https://fonts.googleapis.com/css?family=Monoton|Trade+Winds&display=swap" rel="stylesheet">
+	<!-- javascript link for accordion menu  -->
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="js/jquery.collapse.js"></script>
+    <script src="js/jquery.collapse_storage.js"></script>
+    <script src="js/jquery.collapse_cookie_storage.js"></script>
+    <style>
+        body {
+            background-image: url(ovum.png);
+              background-repeat: no-repeat;
+              background-size: auto;
+              background-position: center top;
+}
+    </style>
+</head>
+<body>
+	<div class="container">
+		<div class="title">
+			Michael Acuqui
 		</div>
-		<a href="week2.html"> Go to week 2 assignment</a><br>
-		<a href="week3.html"> Go to week 3 assignment</a><br>
-	</body>
+	</div>
+	<div class="menu">
+		<ul class="menu_list">
+		  <li id="menu_home"><a href="index.html">home</a></li>
+		  <li id="menu_about"><a href="about.html">about</a></li>
+		  <div id="default-example" data-collapse="accordion">
+		  <li id="menu_works">works</li>
+		  <div>
+		  	<ul class="work_list">
+			    <li><a href="week2.html">video</a><br></li>
+			    <li><a href="week3.html">Snack Div</a></li>
+			  </ul>
+		  </div>
+      </div>
+		</ul>
+	</div>
+
+</body>
 </html>
