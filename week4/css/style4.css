@@ -38,6 +38,7 @@
 	position: fixed;
 	top:20%;
 	left: 35%;
+	z-index: 10;
 }
 .jelly_img{
 	height: 100%;
@@ -48,17 +49,17 @@
     display: inherit;
   }
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 1000px) {
   .hidden2 {
     display: inherit;
   }
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 500px) {
 	.left_container{
 		width:70%;
 	}
 	.right_container{
-		width:40%;
+		width:70%;
 	}
 }
