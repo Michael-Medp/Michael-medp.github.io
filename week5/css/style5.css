@@ -8,17 +8,33 @@ body{
 	height: 100%;
 	background-color: rgb(32,35,48);
 }
+  
+.my_assignments{
+            width: 42%;
+            margin: 32px;
+            padding: 18px;
+            background: rgba(240,210,240,0.8);
+            border: 1px solid black;
+            position: absolute;
+            top: 10%;
+            left: 50%
+  }
+  .logo{
+  	position: absolute;
+  	top: 50%;
+  	right: 50%;
+  }
 #logo {
 	position: absolute;
-	top: : 50%;
-	left:50%;
+	top: : 70%;
+	right: 40%;
 	transform: translate(-50,-50);
 	animation: fill 0.5s ease forwards 3s;
 }
 
 #logo path:nth-child(1){
-	stroke-dasharray: 10px;
-	stroke-dashoffset:10px;
+	stroke-dasharray: 20500px;
+	stroke-dashoffset: 20500px;
 	animation: line-anim 2s ease forwards .3s;
 }
 @keyframes line-anim{
