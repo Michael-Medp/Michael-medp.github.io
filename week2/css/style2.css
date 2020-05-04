@@ -27,7 +27,7 @@ a:hover, a:focus {
 figure {
 	max-width:1024px;
 	max-width:64rem;
-	width:33%;
+	width:25%;
 	height:100%;
 	max-height:494px;
 	max-height:30.875rem;
@@ -49,6 +49,103 @@ video {
 	left:0px;
 	width: 30%;
 	position: fixed !important;
+}
+.controlsContainer {
+  --clickToPlay-size: 48px;
+  --button-size: 30px;
+  --timer-size: 40px;
+  --timer-long-size: 60px;
+  --track-size: 5px;
+  --thumb-size: 13px;
+  --label-font-size: 13px;
+  --pip-toggle-bgcolor: rgb(0, 96, 223);
+  --pip-toggle-text-and-icon-color: rgb(255, 255, 255);
+  --pip-toggle-padding: 5px;
+  --pip-toggle-icon-width-height: 16px;
+  --pip-toggle-translate-x: calc(100% - var(--pip-toggle-icon-width-height) - 2 * var(--pip-toggle-padding));
+}
+.controlsContainer.touch {
+  --clickToPlay-size: 64px;
+  --button-size: 40px;
+  --timer-size: 52px;
+  --timer-long-size: 78px;
+  --track-size: 7px;
+  --thumb-size: 16px;
+  --label-font-size: 16px;
+}
+.controlBar {
+  /* Do not delete: these variables are accessed by JavaScript directly.
+     see videocontrols.js and search for |-width|. */
+  --clickToPlay-width: var(--clickToPlay-size);
+  --playButton-width: var(--button-size);
+  --scrubberStack-width: 64px;
+  --muteButton-width: var(--button-size);
+  --volumeStack-width: 48px;
+  --castingButton-width: var(--button-size);
+  --closedCaptionButton-width: var(--button-size);
+  --fullscreenButton-width: var(--button-size);
+  --positionDurationBox-width: var(--timer-size);
+  --durationSpan-width: var(--timer-size);
+  --positionDurationBox-width-long: var(--timer-long-size);
+  --durationSpan-width-long: var(--timer-long-size);
+}
+.touch .controlBar {
+  /* Do not delete: these variables are accessed by JavaScript directly.
+     see videocontrols.js and search for |-width|. */
+  --scrubberStack-width: 84px;
+  --volumeStack-width: 64px;
+}
+.controlsContainer [hidden],
+.controlBar[hidden],
+.pictureInPictureToggleButton[hidden],
+.videocontrols[inDOMFullscreen] > .controlsContainer > .controlsOverlay > .pictureInPictureToggleButton {
+  display: none;
+}
+
+.controlBar[size="hidden"] {
+  display: none;
+}
+
+.controlsSpacer[hideCursor] {
+  cursor: none;
+}
+
+.controlsContainer,
+.progressContainer {
+  position: relative;
+  height: 100%;
+}
+
+.touch .controlBar {
+  height: 52px;
+}
+
+.controlBar > .button {
+  height: 100%;
+  min-width: var(--button-size);
+  min-height: var(--button-size);
+  padding: 6px;
+  border: 0;
+  margin: 0;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-origin: content-box;
+  background-clip: content-box;
+  -moz-context-properties: fill;
+  fill: #ffffff;
+}
+
+.touch .controlBar > .button {
+  background-size: 24px 24px;
+}
+
+.controlBar > .button:hover {
+  fill: #48a0f7;
+}
+
+.controlBar > .button:hover:active {
+  fill: #2d89e6;
 }
 
 /* controls */
