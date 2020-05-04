@@ -107,9 +107,6 @@ body{
   	width:80%;
   	margin: 0px auto;
 }
-body{
-	overflow:hidden;
-}
 .highlight .attribute-value {
     color: blue;
     font-weight: normal;
