@@ -15,8 +15,7 @@
 }
 .menu{
 	margin:24px;
-	position: absolute;
-	z-index: -1;
+	position: fixed;
 }
 .menu_list{
 	list-style-type: none;
