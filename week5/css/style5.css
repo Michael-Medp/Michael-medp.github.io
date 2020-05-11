@@ -10,8 +10,8 @@ body{
 	background-color: rgb(32,35,48);
 }
 .image {
-    height: 250px;
-    width: 350px;
+    height: 300px;
+    width: 400px;
     background-image: url(../media/me.JPG);
     background-size: cover;
     margin: 0px 500px;
