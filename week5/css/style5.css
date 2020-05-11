@@ -2,32 +2,26 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	font-family: 'Nanum Gothic Coding';
 }
 body{
 	width: 100%;
 	height: 100%;
 	background-color: rgb(32,35,48);
 }
+.image {
+    height: 250px;
+    width: 350px;
+    background-image: url(../img/me.JPG);
+    background-size: cover;
+    margin: 0px 500px;
+    position: center;
+    border: 5px solid grey;
+}
   
-.my_assignments{
-            width: 42%;
-            margin: 32px;
-            padding: 18px;
-            background: rgba(240,210,240,0.8);
-            border: 1px solid black;
-            position: absolute;
-            top: 10%;
-            left: 50%
-  }
-  .logo{
-  	position: absolute;
-  	top: 50%;
-  	right: 50%;
-  }
 #logo {
 	position: absolute;
-	top: : 70%;
-	right: 40%;
+	margin: 150px 500px;
 	transform: translate(-50,-50);
 	animation: fill 0.5s ease forwards 3s;
 }
@@ -37,17 +31,108 @@ body{
 	stroke-dashoffset: 20500px;
 	animation: line-anim 2s ease forwards .3s;
 }
+
+#wrap {
+    float: right;
+    width: 80%;
+    min-height: 100%;
+    position: relative;
+}
+.menu{
+	top: 0px;
+	left: 0px;
+	width: 250px;
+ 	height: 100%;
+ 	background-color: #ff8fcf;
+ 	position: absolute;
+}
+.menu_list{
+	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+  	font-family: 'Nanum Gothic Coding', monospace;
+  	font-size: 60px;
+}
+.about_list{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-family: 'Nanum Gothic Coding', monospace;
+	font-size: 40px;
+}
+.work_list{
+	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+  	font-family: 'Nanum Gothic Coding', monospace;
+  	font-size: 40px;
+}
+.Art_list{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	font-family: 'Nanum Gothic Coding', monospace;
+	font-size: 40px;
+}
+#menu_home:hover{
+	background: #03e9f4;
+	color: #050801;
+	box-shadow: 0 0 5px #03e9f4,
+				0 0 25px #03e9f4,
+				0 0 50px #03e9f4,
+				0 0 200px #03e9f4;
+}
+#menu_about:hover{
+	background: #03e9f4;
+	color: #050801;
+	box-shadow: 0 0 5px #03e9f4,
+				0 0 25px #03e9f4,
+				0 0 50px #03e9f4,
+				0 0 200px #03e9f4;
+}
+#menu_works:hover{
+	background: #03e9f4;
+	color: #050801;
+	box-shadow: 0 0 5px #03e9f4,
+				0 0 25px #03e9f4,
+				0 0 50px #03e9f4,
+				0 0 200px #03e9f4;
+}
+#menu_Art:hover{
+	background: #03e9f4;
+	color: #050801;
+	box-shadow: 0 0 5px #03e9f4,
+				0 0 25px #03e9f4,
+				0 0 50px #03e9f4,
+				0 0 200px #03e9f4;
+}
+
+#svg{
+	margin: 205px 604px;
+    position: absolute;
+}
+
+.text {
+	font-family: 'Nanum Gothic Coding';
+	font-size: 20px;
+	color: white;
+	height: 456px;
+	width: 614px;
+	margin: 35px 400px;
+    position: absolute;
+   	z-index: -1;
+}
+
+a{
+	/* visited link */
+	a:visited;
+	text-decoration: none;
+	color: purple;
+}
+
+
 @keyframes line-anim{
 	to{
 		stroke-dashoffset:0;
-	}
-}
-
-@keyframes fill:{
-	from{
-		fill: transparent;
-	}
-	to{
-		fill: white;
 	}
 }
