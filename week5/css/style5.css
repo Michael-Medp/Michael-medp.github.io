@@ -10,8 +10,8 @@ body{
 	background-color: rgb(32,35,48);
 }
 .image {
-    height: 400px;
-    width: 400px;
+    height: 500px;
+    width: 450px;
     background-size: cover;
     margin: 10px 500px;
     position: center;
