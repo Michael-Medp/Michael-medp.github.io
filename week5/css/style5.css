@@ -12,7 +12,7 @@ body{
 .image {
     height: 300px;
     width: 400px;
-    background-image: url(../img/me.JPG);
+    background-image: url(../img/Me.JPG);
     background-size: cover;
     margin: 0px 500px;
     position: center;
