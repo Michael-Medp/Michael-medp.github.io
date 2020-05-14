@@ -10,11 +10,10 @@ body{
 	background-color: rgb(32,35,48);
 }
 .image {
-    height: 300px;
+    height: 400px;
     width: 400px;
-    background-image: url(../img/Me.JPG);
     background-size: cover;
-    margin: 0px 500px;
+    margin: 10px 500px;
     position: center;
     border: 5px solid grey;
 }
