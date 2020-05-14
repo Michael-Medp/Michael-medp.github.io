@@ -19,6 +19,13 @@
     min-height: 100%;
     position: relative;
 }
+.image {
+    height: 400px;
+    width: 500px;
+    margin: 0px 500px;
+    position: center;
+    border: 5px solid grey;
+}
 .menu{
 	top: 0px;
 	left: 0px;
