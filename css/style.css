@@ -129,6 +129,11 @@ body{
 	.title {
 		font-family: 'Trade Winds';
 		font-size: 80px;
+	}
+	.image{
+		width: 50%
+		height: 50%;
+	}
 }
 
 @media only screen and (max-width: 700px) {
@@ -176,34 +181,6 @@ body{
 .highlight .attribute-value {
     color: blue;
     font-weight: normal;
-}
-
-div.gallery {
-  border: 1px solid #ccc;
-}
-
-div.gallery:hover {
-  border: 1px solid #777;
-}
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.responsive {
-  padding: 0 6px;
-  float: left;
-  width: 24.99999%;
 }
 
 @media only screen and (max-width: 700px) {

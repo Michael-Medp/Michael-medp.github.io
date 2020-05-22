@@ -1,57 +1,102 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Michael Acuqui</title>
+    <meta charset="utf-8"/>
+      <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" type="text/css" href="css/style6.css">
+    <!-- webfont link-->
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding:wght@700|Trade+Winds&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <!-- javascript link for accordion menu  -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="js/jquery.collapse.js"></script>
+    <script src="js/jquery.collapse_storage.js"></script>
+    <script src="js/jquery.collapse_cookie_storage.js"></script>
 </head>
 <body>
-<div id= "poem">
-<p>
-And travellers, now, within that valley <br>
-Through the red-litten windows see <br>
-Vast forms that move fantastically <br>
-To a discordant melody; <br>
-While, like a ghastly rapid river <br> 
-Through the pale door <br>
-A hideous throng rush out forever <br> 
-And laugh — <br>
-but <span id="smile">smile</span> no more.
-</p>
-</div>
+  <div class="container">
+  </div>
+  <div class="menu">
+    <ul class="menu_list">
+      <li id="menu_home"><a href="../index.html">Home</a></li>
+    <div id="default-example" data-collapse="accordion">
+      <li id="menu_about">About</li>
+      <div>
+        <ul class="about_list">
+          <li id="menu_me"><a href="../week5/index.html">About Me</a></li>
+          <li id="menu_me"><a href="https://www.instagram.com/Man_who_sold_the_world">Social Media</a></li>
+        </ul>
+      </div>
+      <li id="menu_works">Works</li>
+      <div>
+        <ul class="work_list">
+          <li id="menu_me"><a href="../week2/index.html">Video</a><br></li>
+          <li id="menu_me"><a href="../week3/index.html">Snack Div</a></li>
+          <li id="menu_me"><a href="../week4/index.html">Response</a></li>
+          <li id="menu_me"><a href="index.html">Random Poem</a></li>
+          <li id="menu_me"><a href="../week10/slide-first.html">Carousel</a></li>
+        </ul>
+      </div>
+        <li id="menu_Art">Art</li>
+        <div>
+        <ul class="Art_list">
+          <li id="menu_me"><a href="../drawings/index.html">Drawings</a><br></li>
+          <li id="menu_me"><a href="../paintings/index.html">Paintings</a></li>
+        </ul>
+        </div>
+          </div>
+    </ul>
+    </div>
+    <div id= "poem">
+    <p>
+    And travellers, now, within that valley <br>
+    Through the red-litten windows see <br>
+    Vast forms that move fantastically <br>
+    To a discordant melody; <br>
+    While, like a ghastly rapid river <br> 
+    Through the pale door <br>
+    A hideous throng rush out forever <br> 
+    And laugh — <br>
+    but <span id="smile">smile</span> no more.
+    </p>
+    </div>
 
-<button onclick="myFunction()">
-shuffle!
-</button>
+    <button onclick="myFunction()">
+    shuffle!
+    </button>
 
-<script>
+    <script>
 
-//this function will be executed whenever the shuffle button is clicked because of 'onclick' DOM inside the button tag. 
-function myFunction(){
-  //this Math.random will generate random number between 0 and 1
-  var randomNumber = Math.random();
-  var chosenWord = "";
-  var bgColor = "";
+    //this function will be executed whenever the shuffle button is clicked because of 'onclick' DOM inside the button tag. 
+    function myFunction(){
+      //this Math.random will generate random number between 0 and 1
+      var randomNumber = Math.random();
+      var chosenWord = "";
+      var bgColor = "";
 
-  //using if statement, check if the randomNumber is larger than 0.5 or not.
-  if (randomNumber > 0.5){
-    // if randomNumber is larger than 0.5 assign "Life" to chosenWord and "pink" to bg color
-    chosenWord = "smile";
-    bgColor = "darkgray";
-  }else{
-    // if randomNumber is not larger than 0.5 assign "Death" to chosenWord and "darkgray" to bg color
-    chosenWord = "sane";
-    bgColor = "crimson";
-  }
+      //using if statement, check if the randomNumber is larger than 0.5 or not.
+      if (randomNumber > 0.5){
+        // if randomNumber is larger than 0.5 assign "Life" to chosenWord and "pink" to bg color
+        chosenWord = "smile";
+        bgColor = "darkgray";
+      }else{
+        // if randomNumber is not larger than 0.5 assign "Death" to chosenWord and "darkgray" to bg color
+        chosenWord = "sane";
+        bgColor = "crimson";
+      }
 
-  //get the elements from html page which are needed to be changed
-  var smile = document.getElementById("smile");
-  var poem = document.getElementById("poem");
+      //get the elements from html page which are needed to be changed
+      var smile = document.getElementById("smile");
+      var poem = document.getElementById("poem");
 
-  //assign the variables to each element so that we can see the changes from webpage.
-  smile.innerHTML = chosenWord;
-  poem.style.backgroundColor = bgColor;
+      //assign the variables to each element so that we can see the changes from webpage.
+      smile.innerHTML = chosenWord;
+      poem.style.backgroundColor = bgColor;
 
-  //to check newly assigned randomNumber from the console, let's add this line
-  console.log(randomNumber);
-}
-</script>
+      //to check newly assigned randomNumber from the console, let's add this line
+      console.log(randomNumber);
+    }
+    </script>
 </body>
 </html>
